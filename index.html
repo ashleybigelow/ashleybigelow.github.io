@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div.mainMenu {
+      bottom: 1;
+      right: 100;
+      width: 82px;
+      border: 3px solid #3cbd8b;
+    }
+
+    .buttons {
+      width: 20%;
+      display: table-cell;
+    }
+
+    .column {
+      float: left;
+      width: 50%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .centerImage {
+      text-align: center;
+      display: block;
+    }
+
+    .textblock {
+      font-size: 20px;
+      width: 580px;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 5px;
+      margin: 10px 5px;
+      padding: 4px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    .space {
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body style="background-color:rgb(218, 192, 218)" ;>
+  <p class="buttons">About</p>
+  <p class="buttons">
+    <a href="html/resume.html">Resume</a>
+  </p>
+  <p class="buttons">
+    <a href="html/projects.html">Projects</a>
+  </p>
+  <p></p>
+  <hr style="background-color:black; border:none; height:2px">
+  <H1 style="color:rgb(29, 29, 29); font-family: Verdana; font-size: 250%;">
+    <pre>
+  All About Me : Ashley Bigelow</pre>
+  </H1>
+  <div class="row">
+    <div class="column">
+      <p class="centerImage"><img src="images/me.PNG"> </p>
+    </div>
+    <div class="column">
+      <p class="space"></p>
+      <p class="textblock">I am currently a rising Junior studying computer science at
+        Cornell University. While in college, I have learned how to code in Python, Java, and
+        most recently OCaml. In order to create this webite, I taught myself a little
+        bit of HTML along with some CSS over the summer. Attatched I have included my
+        resume along with some of my projects so that I can keep track of all of the
+        work I have been doing.
+      </p>
+      <div class="textblock">
+        <p>Some of the <b>programming languages</b> I know are: Java, Python, Ocaml, HTML, CSS,
+          JavaScript, and I'm currently learning C.</p>
+      </div>
+      <div class="textblock">
+        <p>Some <b>useful courses</b> I have taken so far are: Discrete Structures,
+          Data Structures & Functional Programming, Data-Driven Web Applications, Computer
+          System Organization, Foundations of Artificial Intelligence, and Intro to
+          Analysis of Algorithms.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
