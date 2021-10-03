@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .buttons {
+      width: 20%;
+      display: table-cell;
+    }
+
+    .column {
+      float: left;
+      width: 50%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .centerImage {
+      text-align: center;
+      display: block;
+    }
+  </style>
+</head>
+
+<body style="background-color:rgb(218, 192, 218)" ;>
+  <p class="buttons">
+    <a href="../index.html">About</a>
+  </p>
+  <p class="buttons">
+    <a href="resume.html">Resume</a>
+  </p>
+  <p class="buttons">
+    Projects
+  </p>
+  <p></p>
+  <hr style="background-color:black; border:none; height:2px">
+  <H1 style="color:rgb(29, 29, 29); font-family: Verdana; font-size: 250%;">
+    <pre>
+    Projects</pre>
+  </H1>
+  <div class="row">
+    <div class="column">
+      <p style="text-align:center">
+        <a href="journal.html">Journal Project</a>
+      </p>
+      <p class="centerImage"><img src="../images/journal.PNG"></p>
+    </div>
+    <div class="column">
+      <p style="text-align:center">
+        <a href="invaders.html">Invaders Project</a>
+      </p>
+      <p class="centerImage"><img src="../images/invaders.jpg"></p>
+    </div>
+  </div>
+</body>
+
+</html>
