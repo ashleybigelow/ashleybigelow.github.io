@@ -49,6 +49,11 @@
     .space {
       height: 50px;
     }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
   </style>
 </head>
 
@@ -66,11 +71,11 @@
     <pre>
   All About Me : Ashley Bigelow</pre>
   </H1>
-  <div class="row">
-    <div class="column">
+  <div class="grid-container">
+    <div>
       <p class="centerImage"><img src="images/me.PNG"> </p>
     </div>
-    <div class="column">
+    <div>
       <p class="space"></p>
       <p class="textblock">I am currently a rising Junior studying computer science at
         Cornell University. While in college, I have learned how to code in Python, Java, and

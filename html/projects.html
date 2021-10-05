@@ -13,15 +13,16 @@
     }
 
     .column {
-      float: left;
+      float: center;
       width: 50%;
     }
 
     /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      justify-content: space-evenly;
+      grid-column-gap: 10px;
     }
 
     .centerImage {
@@ -47,14 +48,14 @@
     <pre>
     Projects</pre>
   </H1>
-  <div class="row">
-    <div class="column">
+  <div class="grid-container">
+    <div>
       <p style="text-align:center">
         <a href="journal.html">Journal Project</a>
       </p>
       <p class="centerImage"><img src="../images/journal.PNG"></p>
     </div>
-    <div class="column">
+    <div>
       <p style="text-align:center">
         <a href="invaders.html">Invaders Project</a>
       </p>
