@@ -6,84 +6,84 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/ashleybigelow.github.io/style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
   <a class="buttons" href="/ashleybigelow.github.io/index.html">About</p>
-  <a class="buttons" href="/ashleybigelow.github.io/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-  <a class="buttons" href="projects.html">Projects</a>
-  <a class="buttons" href="contactme.html">Contact Me</a>
-  <br>
-  <hr style="background-color:black; border:none; height:2px">
-  <H1 style="color:rgb(29, 29, 29); font-family: Verdana; font-size: 250%;">
-    <pre>
+    <a class="buttons" href="/ashleybigelow.github.io/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+    <a class="buttons" href="projects.html">Projects</a>
+    <a class="buttons" href="contactme.html">Contact Me</a>
+    <br>
+    <hr style="background-color:black; border:none; height:2px">
+    <H1 style="color:rgb(29, 29, 29); font-family: Verdana; font-size: 250%;">
+      <pre>
     Journal Project</pre>
-  </H1>
+    </H1>
 
-  <!-- This will make it so that when the arrows are presses, the image and text
+    <!-- This will make it so that when the arrows are presses, the image and text
   elements change-->
-  <script>
-    function arrow(a) {
-      var pic;
-      var text;
-      if (a == 0) {
-        pic = "../images/journal.PNG"
-        text = "A little about this project : This is a team project that I " +
-          "worked on in my Data Structures and Functional Programming class my " +
-          "second semester sophmore year. I was in a group of four <br> and we decided " +
-          "to use OCaml Graphics to make our own customizable journal. My part of " +
-          "the project consisted of implementing all of the customizable " +
-          "functionalities of the journal, <br> which included setting up the welcome " +
-          "screen. You can select the numbers below to see more about the journal."
+    <script>
+      function arrow(a) {
+        var pic;
+        var text;
+        if (a == 0) {
+          pic = "../images/journal.PNG"
+          text = "A little about this project : This is a team project that I " +
+            "worked on in my Data Structures and Functional Programming class my " +
+            "second semester sophmore year. I was in a group of four <br> and we decided " +
+            "to use OCaml Graphics to make our own customizable journal. My part of " +
+            "the project consisted of implementing all of the customizable " +
+            "functionalities of the journal, <br> which included setting up the welcome " +
+            "screen. You can select the numbers below to see more about the journal."
+        }
+        else if (a == 1) {
+          pic = "../images/welcome.PNG"
+          text = "This is the welcome screen. It was my job to create this to allow " +
+            "the user to be able to make their journal more cutomizable. The user is " +
+            "able to type their name and then hit enter to continue onto more customizations." +
+            "</br><pre> </pre>"
+        }
+        else if (a == 2) {
+          pic = "../images/journalselections.PNG"
+          text = "This is the other part of the customizations. The user is able " +
+            "to select the colors that they would like for the text, background, " +
+            "and lines on their journal. It also has an example window at the " +
+            "bottom of the screen that changes with their selections, giving them " +
+            "an idea of what their journal will look like." +
+            "</br> <pre> </pre>"
+        }
+        else {
+          pic = "../images/settingsjournal.PNG"
+          text = "This is the final page. I helped with implementing the buttons " +
+            "you see at the bottom of the screen, which allow the user to change " +
+            "the settings after they've passed the welcome screen." +
+            "</br> </br> <pre> </pre>"
+        }
+        document.getElementById('myImage').src = pic;
+        document.getElementById('text').innerHTML = text;
       }
-      else if (a == 1) {
-        pic = "../images/welcome.PNG"
-        text = "This is the welcome screen. It was my job to create this to allow " +
-          "the user to be able to make their journal more cutomizable. The user is " +
-          "able to type their name and then hit enter to continue onto more customizations." +
-          "</br><pre> </pre>"
-      }
-      else if (a == 2) {
-        pic = "../images/journalselections.PNG"
-        text = "This is the other part of the customizations. The user is able " +
-          "to select the colors that they would like for the text, background, " +
-          "and lines on their journal. It also has an example window at the " +
-          "bottom of the screen that changes with their selections, giving them " +
-          "an idea of what their journal will look like." +
-          "</br> <pre> </pre>"
-      }
-      else {
-        pic = "../images/settingsjournal.PNG"
-        text = "This is the final page. I helped with implementing the buttons " +
-          "you see at the bottom of the screen, which allow the user to change " +
-          "the settings after they've passed the welcome screen." +
-          "</br> </br> <pre> </pre>"
-      }
-      document.getElementById('myImage').src = pic;
-      document.getElementById('text').innerHTML = text;
-    }
-  </script>
+    </script>
 
-  <p id="text" style="font-size: 125%;">A little about this project : This is a team
-    project that I worked on in my
-    Data Structures and Functional Programming class my second semester sophmore
-    year. I was in a group of four and we decided to use OCaml Graphics to make
-    our own customizable journal. My part of the project consisted of implementing
-    all of the customizable functionalities of the journal, which included setting
-    up the welcome screen. You can select the numbers below to see more about the
-    journal.
-  </p>
-  <p class="centerImage">
-    <img id="myImage" src="../images/journal.PNG">
-  </p>
+    <p id="text" style="font-size: 125%;">A little about this project : This is a team
+      project that I worked on in my
+      Data Structures and Functional Programming class my second semester sophmore
+      year. I was in a group of four and we decided to use OCaml Graphics to make
+      our own customizable journal. My part of the project consisted of implementing
+      all of the customizable functionalities of the journal, which included setting
+      up the welcome screen. You can select the numbers below to see more about the
+      journal.
+    </p>
+    <p class="centerImage">
+      <img id="myImage" src="../images/journal.PNG">
+    </p>
 
-  <p class="centerImage">
-    <button type="button" onclick="arrow(0)">1</button>
-    <button type="button" onclick="arrow(1)">2</button>
-    <button type="button" onclick="arrow(2)">3</button>
-    <button type="button" onclick="arrow(3)">4</button>
-  </p>
+    <p class="centerImage">
+      <button type="button" onclick="arrow(0)">1</button>
+      <button type="button" onclick="arrow(1)">2</button>
+      <button type="button" onclick="arrow(2)">3</button>
+      <button type="button" onclick="arrow(3)">4</button>
+    </p>
 </body>
 
 </html>
