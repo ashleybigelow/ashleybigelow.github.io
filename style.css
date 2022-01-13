@@ -53,3 +53,10 @@ div.mainMenu {
   justify-content: space-evenly;
   grid-column-gap: 10px;
 }
+
+.link {
+  font-size: 20px;
+  margin-left: 20px;
+  color:rgb(0, 0, 0);
+  
+}
