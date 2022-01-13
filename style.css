@@ -13,6 +13,8 @@ div.mainMenu {
 	display: inline-block;
 	padding: 8px;
   opacity: 0.7;
+  text-decoration: none;
+  font-size: 20;
 }
 
 .buttons:hover {
