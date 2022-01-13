@@ -1,79 +1,79 @@
 body {
-  background-color: rgb(218, 192, 218);
+	background-color: rgb(218, 192, 218);
 }
 
 div.mainMenu {
-  bottom: 1;
-  right: 100;
-  width: 82px;
-  border: 3px solid #3cbd8b;
+	bottom: 1;
+	right: 100;
+	width: 82px;
+	border: 3px solid #3cbd8b;
 }
 
 .buttons {
 	color: black;
-  background-color: rgb(218, 192, 218);
+	background-color: rgb(218, 192, 218);
 	border: none;
 	text-align: center;
 	outline: 0;
 	display: inline-block;
-	padding-left: 25px;
-  opacity: 0.7;
-  text-decoration: none;
-  font-size: 20;
+	padding-left: 35px;
+	padding-top: 20px;
+	opacity: 0.7;
+	text-decoration: none;
+	font-size: 20px;
 }
 
 .buttons:hover {
-  opacity: 1;
-  text-decoration: underline;
+	opacity: 1;
+	text-decoration: underline;
 }
 
 .column {
-  float: left;
-  width: 50%;
+	float: left;
+	width: 50%;
 }
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .centerImage {
-  text-align: center;
-  display: block;
+	text-align: center;
+	display: block;
 }
 
 .textblock {
-  font-size: 20px;
-  width: 580px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 5px;
-  margin: 10px 5px;
-  padding: 4px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	font-size: 20px;
+	width: 580px;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 5px;
+	margin: 10px 5px;
+	padding: 4px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .space {
-  height: 50px;
+	height: 50px;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
+	display: grid;
+	grid-template-columns: auto auto;
 }
 
 /* Clear floats after the columns */
 .grid-container-four {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  justify-content: space-evenly;
-  grid-column-gap: 10px;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	justify-content: space-evenly;
+	grid-column-gap: 10px;
 }
 
 .link {
-  font-size: 20px;
-  margin-left: 20px;
-  color:rgb(0, 0, 0);
-
+	font-size: 20px;
+	margin-left: 20px;
+	color: rgb(0, 0, 0);
 }
