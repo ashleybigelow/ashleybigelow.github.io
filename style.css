@@ -7,6 +7,7 @@ div.mainMenu {
 
 .buttons {
 	color: black;
+  background-color: none;
 	border: none;
 	text-align: center;
 	outline: 0;
