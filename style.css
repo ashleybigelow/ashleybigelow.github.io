@@ -1,5 +1,46 @@
-body {
-	background-color: rgb(218, 192, 218);
+/*body {
+	background-color: rgb(219,136,120);
+	background-image: url('images/sunset.jpg');
+	height: 830px; 
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}*/
+*{
+	margin: 0;
+	margin-top: 0px;
+	padding: 0;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+	color:rgb(29, 29, 29); 
+	font-family:'Times New Roman', Times, serif; 
+  font-size: 250%; 
+	text-align: center;
+}
+
+body#aboutid {
+	background-image: url('images/blueberry.jpg');
+	background-color: rgb(124,168,217);
+	height: 1900px;
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+body#contactid {
+	background-color: rgb(124,168,217);
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+body#projectsid {
+	background-color: rgb(124,168,217);
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 div.mainMenu {
@@ -11,21 +52,21 @@ div.mainMenu {
 
 .buttons {
 	color: black;
-	background-color: rgb(218, 192, 218);
+	background-color: rgba(255, 255, 255, 0.65);
 	border: none;
 	text-align: center;
 	outline: 0;
 	display: inline-block;
 	padding-left: 40px;
 	padding-right: 40px;
-	padding-top: 20px;
-	opacity: 0.7;
+	padding-top: 0px;
 	text-decoration: none;
 	font-size: 20px;
+	border-radius: 25px;
 }
 
 .buttons:hover {
-	opacity: 1;
+	background-color: rgba(255, 255, 255, 1);
 	text-decoration: underline;
 }
 
@@ -47,13 +88,36 @@ div.mainMenu {
 }
 
 .textblock {
-	font-size: 20px;
+	font-size: 30px;
 	width: 580px;
 	border: 1px solid rgb(0, 0, 0);
 	border-radius: 5px;
-	margin: 10px 5px;
 	padding: 4px;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	background-color: rgb(255, 255, 255, 0.65);
+}
+
+.input-cursor {
+	display: inline-block;
+	width: 2px;
+	height: 42px;
+	background-color: white;
+	margin-left: 8px;
+}
+
+.textblocka {
+	margin-left: 50px;
+	position: static;
+}
+
+.textblockb {
+	margin-left: 50px;
+	position: static;
+}
+
+.textblockc {
+	margin-left: 50px;
+	position: static;
 }
 
 .space {
@@ -75,23 +139,27 @@ div.mainMenu {
 }
 
 .card {
-	width: 500px;
-	height: 500px;
+	width: 400;
+	height: 400;
 	margin-bottom: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	background-color: rgb(221, 174, 221);
+	background-color: rgb(255,255,255, 0.5);
+	border-radius: 10px;
 }
 
 .card-buttons {
 	color: black;
-	background-color: rgb(221, 174, 221);
+	font-family: 'Times New Roman', Times, serif;
 	border: none;
 	text-align: center;
 	outline: 0;
 	display: inline-block;
 	padding-left: 35px;
 	padding-top: 20px;
-	opacity: 0.7;
 	text-decoration: none;
 	font-size: 20px;
+}
+
+span {
+	opacity: 0.1;
 }
