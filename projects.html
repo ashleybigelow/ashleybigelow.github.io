@@ -1,44 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body id="projectsid">
-  <!--This is the header for the pages-->
-  <div style="position:fixed; width:100%; background-color: rgba(255, 255, 255, 0.5);">
-    <p style="height: 40px;"></p>
-    <p class="centerImage">
-      <a class="buttons" href="about.html">About Me</a>
-      <a class="buttons" href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-      <a class="buttons" href="https://github.com/ashleybigelow" target="_blank" rel="noopener noreferrer">Github</a>
-      <a class="buttons" href="https://www.linkedin.com/in/ashley-bigelow-8a0a091b8/" target="_blank" rel="noopener noreferrer">Linkedin</a>
-      <a class="buttons" href="projects.html">Projects</a>
-      <a class="buttons" href="contactme.html">Contact Me</a>
-    </p>
-      <br>
-    <hr style="background-color:white; border:none; height:2px">
-  </div>
-  <!--This is the body-->
-  <p style="height: 100px;"></p>
-  <H1 style="margin-bottom: 70px;">
-    Projects
-  </H1>
-  <div class="grid-container">
-    <div class="card">
-      <a class="card-buttons" href="journal.html">Journal Project</a>
-      <p class="centerImage"><img src="images/journal.PNG" width = '500'></p>
+  <body id="projectsid">
+    <!--This is the header for the pages-->
+    <div
+      style="
+        position: fixed;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+      "
+    >
+      <p style="height: 40px"></p>
+      <p class="centerImage">
+        <a
+          style="float: left; margin-top: -20px; margin-left: 30px"
+          href="index.html"
+        >
+          <img src="../images/house.png" width="40" alt="home logo" />
+        </a>
+        <a class="buttons" href="about.html">About Me</a>
+        <a
+          class="buttons"
+          href="Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Resume</a
+        >
+        <a
+          class="buttons"
+          href="https://github.com/ashleybigelow"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Github</a
+        >
+        <a
+          class="buttons"
+          href="https://www.linkedin.com/in/ashley-bigelow-8a0a091b8/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Linkedin</a
+        >
+        <a class="buttons" href="projects.html">Projects</a>
+        <a class="buttons" href="contactme.html">Contact Me</a>
+      </p>
+      <br />
+      <hr style="background-color: white; border: none; height: 2px" />
     </div>
-    <div class= "card">
-      <a class="card-buttons" href="invaders.html">Invaders Project</a>
-      <p class="centerImage"><img src="images/invaders.jpg" width = '500'></p>
+    <!--This is the body-->
+    <p style="height: 100px"></p>
+    <h1 style="margin-bottom: 70px">Projects</h1>
+    <div class="project">
+      <!--Journal Project-->
+      <div class="card">
+        <div class="grid-container">
+          <div class="card_left">
+            <p class="card_title">Journal Project</p>
+            <p class="centerImage">
+              <img src="images/journal.PNG" width="350" />
+            </p>
+          </div>
+          <div class="card_right">
+            <p class="card_text">
+              This is a team project that I worked on in my Data Structures and
+              Functional Programming class my second semester sophmore year. I
+              was in a group of four and we decided to use OCaml Graphics to
+              make our own customizable journal. My contributions to the project
+              consisted of implementing all of the customizable functionalities
+              of the journal, which included setting up the welcome screen.
+            </p>
+            <p class="card_footer">Technologies Used: OCaml</p>
+          </div>
+        </div>
+      </div>
+      <!--Invaders Project-->
+      <div class="card">
+        <div class="grid-container">
+          <div class="card_left">
+            <p class="card_title">Invaders Project</p>
+            <p class="centerImage">
+              <img src="images/invaders.jpg" width="400" />
+            </p>
+          </div>
+          <div class="card_right">
+            <p class="card_text">
+              For a final project, I coded my own version of the game Space
+              Invaders in Python. This project helped me to enhance many skills
+              including:
+            </p>
+            <ul
+              style="
+                list-style-type: circle;
+                font-weight: bold;
+                font-size: 20px;
+              "
+            >
+              <li>Practice reading official class documentation and APIs</li>
+              <li>Experience with a complex, interactive application</li>
+              <li>
+                Experience with programming animation and simple collisions
+              </li>
+              <li>Experience with an open-ended project</li>
+              <li>Experience working with classes and subclasses</li>
+            </ul>
+            <p class="card_footer">Technologies Used: Python</p>
+          </div>
+        </div>
+      </div>
+      <!--CRC Website-->
+      <div class="card">
+        <div class="grid-container">
+          <div class="card_left">
+            <p class="card_title">CRC Website</p>
+            <p class="centerImage">
+              <a
+                href="https://combatrobotics.engineering.cornell.edu/index.html"
+                target="_blank"
+              >
+                <img
+                  class="zoom"
+                  src="images/CRC_Website.png"
+                  width="400"
+                  alt="A picture of the Combat Robotics at Cornell Website"
+                />
+              </a>
+            </p>
+          </div>
+          <div class="card_right">
+            <p class="card_text">
+              For my club Combat Robotics at Cornell, I was in charge of
+              designing a new website from scratch and assigning certain project
+              to other team members. I also taught other members how to use
+              github to make it so that anyone regardless of coding experience
+              was able to help. I mainly worked on the menu bar at the top of
+              the page and the team page. Click the Image to view the website.
+            </p>
+            <p class="card_footer">Technologies Used: HTML, CSS, JavaScript</p>
+          </div>
+        </div>
+      </div>
+      <!--Fitness Website-->
+      <div class="card">
+        <div class="grid-container">
+          <div class="card_left">
+            <p class="card_title">Fitness Website</p>
+            <p class="centerImage">
+              <img src="images/fitness.jpg" width="400" />
+            </p>
+          </div>
+          <div class="card_right">
+            <p class="card_text">
+              I designed and programmed a website designed to track a user's
+              fitness progress using Python and Flask. To do this, I implemented
+              frontend web design along with a backend database using SQL to
+              save user account information.
+            </p>
+            <p class="card_footer">
+              Technologies Used: Python, Flask, SQLAlchemy
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Calculator-->
+      <div class="card">
+        <div class="grid-container">
+          <div class="card_left">
+            <p class="card_title">Calculator</p>
+            <p class="centerImage">
+              <img src="images/calculator.jpg" width="180" />
+            </p>
+          </div>
+          <div class="card_right">
+            <p class="card_text">
+              A caculator that I created that runs on JavaScript. It can do
+              basic functions such as: add, subtract, multiple, divide, percent.
+              It is able to handle decimals and you can change the sign of the
+              number. It has a display to show the user the current value.
+            </p>
+            <p class="card_footer">Technologies Used: JavaScript, Node.js</p>
+          </div>
+        </div>
+      </div>
+      <!--Chat App-->
+      <div class="card">
+        <div class="grid-container">
+          <div class="card_left">
+            <p class="card_title">Chat App</p>
+            <p class="centerImage">
+              <img src="images/chat.jpg" width="400" />
+            </p>
+          </div>
+          <div class="card_right">
+            <p class="card_text">
+              This is a project that I worked on that allows users to chat with
+              one another. I created a server using Node that is able to recieve
+              messages and send them to all of the users in the same chat room.
+            </p>
+            <p class="card_footer">
+              Technologies Used: JavaScript, Node.js, Socket.io, Express
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Connect 4 AI-->
+      <div class="card">
+        <div class="grid-container">
+          <div class="card_left">
+            <p class="card_title">Connect 4 AI</p>
+            <p class="centerImage">
+              <img src="images/connect4.jpg" width="250" />
+            </p>
+          </div>
+          <div class="card_right">
+            <p class="card_text">
+              An AI that I coded for a class project. It is able to use
+              different heuristics at different depths to play against the user
+              or itself, choosing the best move.
+            </p>
+            <p class="card_footer">Technologies Used: Python</p>
+          </div>
+        </div>
+      </div>
+      <!--Cache-->
+      <div class="card">
+        <div class="grid-container">
+          <div class="card_left">
+            <p class="card_title">Cache</p>
+            <p class="centerImage">
+              <img src="images/cache.jpg" width="400" />
+            </p>
+          </div>
+          <div class="card_right">
+            <p class="card_text">
+              In this assignment, my team and I wrote a performance simulator: a
+              C program that simulates the behavior of a cache. The simulator is
+              configurable and can model the behavior of a variety of cache
+              configurations as well as a variety of coherence protocols.
+            </p>
+            <p class="card_footer">Technologies Used: C</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class = "card">
-      <a class="card-buttons" href="crc.html">CRC Website</a>
-      <p class="centerImage"><img src="images/CRC_Website.png" width = '500'></p>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>

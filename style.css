@@ -127,7 +127,6 @@ div.mainMenu {
 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto;
-	text-align: center;
 	justify-content: space-evenly;
 	grid-column-gap: 10px;
 }
@@ -138,26 +137,45 @@ div.mainMenu {
 	color: rgb(0, 0, 0);
 }
 
+.card_title{
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.card_text {
+	font-size: 20px;
+	inline-size: 500px;
+  overflow-wrap: break-word;
+	padding: 30px 10px;
+}
+
+.card_left{
+	text-align: center;
+}
+
+.card_right{
+	position: relative
+}
+
+.card_footer{
+	position: absolute; 
+	bottom: 0px
+}
+
 .card {
-	width: 400;
-	height: 400;
+	margin:auto;
+	width: 72%;
+
+	height: 350px;
 	margin-bottom: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	background-color: rgb(255,255,255, 0.5);
 	border-radius: 10px;
 }
 
-.card-buttons {
-	color: black;
-	font-family: 'Times New Roman', Times, serif;
-	border: none;
-	text-align: center;
-	outline: 0;
-	display: inline-block;
-	padding-left: 35px;
-	padding-top: 20px;
-	text-decoration: none;
-	font-size: 20px;
+.zoom:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 span {
